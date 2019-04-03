@@ -1,6 +1,5 @@
-package vavrfun;
+package funfun;
 
-import io.vavr.collection.Iterator;
 import io.vavr.collection.List;
 import org.junit.Test;
 
@@ -17,4 +16,5 @@ public class ListToJava {
 
         assertThat(javaList.size()).isEqualTo(vavrList.size());
     }
+
 }

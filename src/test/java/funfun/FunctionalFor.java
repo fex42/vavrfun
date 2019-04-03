@@ -1,4 +1,4 @@
-package vavrfun;
+package funfun;
 
 import io.vavr.collection.Iterator;
 import io.vavr.collection.List;
