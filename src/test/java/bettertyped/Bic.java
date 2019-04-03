@@ -1,7 +1,7 @@
 package bettertyped;
 
 public final class Bic {
-    private String value;
+    private final String value;
 
     private Bic(String value) {
         this.value = value;
