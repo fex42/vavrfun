@@ -2,7 +2,6 @@ package bettertyped;
 
 import org.junit.Test;
 
-import java.awt.print.Book;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Optional;

@@ -1,10 +1,8 @@
 package bettertyped;
 
 import lombok.Builder;
-import lombok.Data;
 import lombok.Value;
 
-import java.math.BigDecimal;
 import java.util.Optional;
 
 @Builder

@@ -35,7 +35,7 @@ public class PredictableCode {
         Order order2 = new Order(99, "Sepp");
         boolean equalCustomers = order1 == order2;
 
-        assertThat(equalStrings).isEqualTo(equalCustomers);
+        Assertions.assertThat(equalStrings).isEqualTo(equalCustomers);
     }
 
 
@@ -50,7 +50,7 @@ public class PredictableCode {
 
         boolean cust1inSet = customers.contains(order);
 
-        assertThat(customers.contains(order)).isTrue();
+        Assertions.assertThat(customers.contains(order)).isTrue();
     }
 
     private void doSth(Order cust) {
@@ -64,6 +64,6 @@ public class PredictableCode {
 
         boolean isEqual = trans.equals(order); // This is a bug!!!
 
-        assertThat(isEqual).isFalse();
+        Assertions.assertThat(isEqual).isFalse();
     }
 }
