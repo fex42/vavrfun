@@ -1,6 +1,5 @@
 package life;
 
-import io.vavr.collection.HashSet;
 import io.vavr.collection.Set;
 import lombok.Builder;
 import lombok.Value;
