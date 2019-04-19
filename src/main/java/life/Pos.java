@@ -20,5 +20,4 @@ public final class Pos {
         return res.map(p -> (p.x >= 0 && p.x < boardWidth && p.y >= 0 && p.y < boardHeight) ?
                 p : Pos.of(Math.floorMod(p.x, boardWidth), Math.floorMod(p.y, boardHeight)));
     }
-
 }
