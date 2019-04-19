@@ -5,7 +5,7 @@ import io.vavr.collection.Set;
 import lombok.Value;
 
 @Value
-public class Pos {
+public final class Pos {
     private int x;
     private int y;
 
