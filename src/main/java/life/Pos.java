@@ -3,9 +3,6 @@ package life;
 import io.vavr.collection.HashSet;
 import io.vavr.collection.Set;
 import lombok.Value;
-import org.junit.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 @Value
 public class Pos {

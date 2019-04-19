@@ -5,12 +5,12 @@ import io.vavr.collection.List;
 import io.vavr.control.Option;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import static io.vavr.API.*;
 import static io.vavr.Patterns.$None;
 import static io.vavr.Patterns.$Some;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class FunctionalFor {
 
