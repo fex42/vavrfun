@@ -14,15 +14,9 @@ public final class Pos {
     }
 
     public Set<Pos> neighbours(int boardWidth, int boardHeight) {
-        Set<Pos> res = HashSet.of(Pos.of(x - 1, y - 1),
-                Pos.of(x - 1, y),
-                Pos.of(x - 1, y + 1),
-                Pos.of(x, y + 1),
-                Pos.of(x + 1, y + 1),
-                Pos.of(x + 1, y),
-                Pos.of(x + 1, y - 1),
-                Pos.of(x, y - 1)
-        );
+        Set<Pos> res = HashSet.of(Pos.of(x - 1, y - 1), Pos.of(x - 1, y), Pos.of(x - 1, y + 1),
+                Pos.of(x, y + 1), Pos.of(x + 1, y + 1), Pos.of(x + 1, y),Pos.of(x + 1, y - 1),
+                Pos.of(x, y - 1));
         return res.map(p -> p.wrap(boardWidth, boardHeight));
     }
 
