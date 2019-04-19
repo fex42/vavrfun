@@ -1,4 +1,4 @@
-package vavrfun;
+package funfun;
 
 import io.vavr.collection.Iterator;
 import io.vavr.collection.List;
@@ -76,7 +76,7 @@ public class FunctionalFor {
                 Case($None(), 0)
         );
 
-        assertThat(num).isEqualTo(0);
+        Assertions.assertThat(num).isEqualTo(0);
 
         Option<Person> personOption2 = Option.some(new Person("Felix", 42, List()));
 
@@ -85,6 +85,6 @@ public class FunctionalFor {
                 Case($None(), 0)
         );
 
-        assertThat(num2).isEqualTo(1.0d);
+        Assertions.assertThat(num2).isEqualTo(1.0d);
     }
 }

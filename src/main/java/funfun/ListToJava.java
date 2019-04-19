@@ -1,6 +1,5 @@
-package vavrfun;
+package funfun;
 
-import io.vavr.collection.Iterator;
 import io.vavr.collection.List;
 import org.junit.Test;
 
@@ -15,6 +14,7 @@ public class ListToJava {
         // Vavr and Java are fully interoperable
         java.util.List<Integer> javaList = vavrList.map(String::length).asJava();
 
-        assertThat(javaList.size()).isEqualTo(vavrList.size());
+        Assertions.assertThat(javaList.size()).isEqualTo(vavrList.size());
     }
+
 }
