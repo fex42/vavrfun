@@ -15,28 +15,28 @@ public class Board {
     @Wither
     private final Set<Pos> cells;
 
-    public boolean isAlive(Pos cell) {
+    private boolean isAlive(Pos cell) {
         return cells.contains(cell);
     }
 
-    public boolean isEmpty(Pos cell) {
+    private boolean isEmpty(Pos cell) {
         return !cells.contains(cell);
     }
 
     private int liveNeighbours(Pos cell) {
-        return cell.neighbours(width, height).filter(c -> isAlive(c)).length();
+        return cell.neighbours(width, height).filter(this::isAlive).length();
     }
 
-    public Set<Pos> survivors() {
+    private Set<Pos> survivors() {
         return cells.filter(c -> {
             final int neighbours = liveNeighbours(c);
             return neighbours == 2 || neighbours == 3;
         });
     }
 
-    public Set<Pos> births() {
+    private Set<Pos> births() {
         return cells.flatMap(c -> c.neighbours(width, height))
-                .filter(c -> isEmpty(c))
+                .filter(this::isEmpty)
                 .filter(c -> liveNeighbours(c) == 3);
     }
 

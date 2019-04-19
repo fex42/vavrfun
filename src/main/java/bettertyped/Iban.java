@@ -14,7 +14,7 @@ public final class Iban {
         if (s.length() > 34) {
             throw new IllegalArgumentException("Iban maximum length of 34 characters exceeded");
         }
-        if (s.length() > 34) {
+        if (s.length() < 15) {
             throw new IllegalArgumentException("Iban minimum length of 15 characters deceed");
         }
         if (!Character.isAlphabetic(s.charAt(0)) || !Character.isAlphabetic(s.charAt(1))) {

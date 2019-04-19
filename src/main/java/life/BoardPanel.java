@@ -9,12 +9,11 @@ public class BoardPanel extends JPanel implements ActionListener {
 
     private static final int DELAY = 150;
     private Board board;
-    private final Timer timer;
 
     public BoardPanel(Board board) {
         this.board = board;
-        this.timer = new Timer(DELAY, this);
-        this.timer.start();
+        Timer timer = new Timer(DELAY, this);
+        timer.start();
     }
 
     @Override
@@ -35,9 +34,7 @@ public class BoardPanel extends JPanel implements ActionListener {
         final int cellWidth = (int) (w / width);
         final int cellHeight = (int) (h / height);
 
-        board.getCells().forEach(c -> {
-            g.fillOval(c.getX() * cellWidth, c.getY() * cellHeight, cellWidth, cellHeight);
-        });
+        board.getCells().forEach(c -> g.fillOval(c.getX() * cellWidth, c.getY() * cellHeight, cellWidth, cellHeight));
     }
 
     @Override
