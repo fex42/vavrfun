@@ -10,5 +10,8 @@ public class ImmutableDemo {
 
         LombokImmutableRGB blue = black.withBlue(255);
         System.out.println("blue = "+ blue);
+
+        KotlinRGB ktBlack = new KotlinRGB(0,0,0);
+        System.out.println("Kotlin black = " + ktBlack);
     }
 }
