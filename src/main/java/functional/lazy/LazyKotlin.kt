@@ -1,4 +1,4 @@
-package functional
+package functional.lazy
 
 import arrow.syntax.function.memoize
 
