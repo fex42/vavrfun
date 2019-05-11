@@ -45,7 +45,7 @@ public class FunctionalFor {
 
 
         // The functional For is an expression that yields a value.
-        // The result is a lazy evaluated collection of elements.
+        // The result is a functional evaluated collection of elements.
 
         Iterator<String> iterator =
                 For(persons.filter(Person::hasAddress), p ->
