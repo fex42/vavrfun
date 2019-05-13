@@ -1,4 +1,4 @@
-package funfun;
+package functional;
 
 import io.vavr.collection.List;
 import org.assertj.core.api.Assertions;

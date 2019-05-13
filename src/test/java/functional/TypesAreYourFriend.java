@@ -1,4 +1,4 @@
-package funfun;
+package functional;
 
 public class TypesAreYourFriend {
 }

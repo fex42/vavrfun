@@ -1,8 +1,7 @@
-package funfun;
+package functional;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.junit.Test;
 
 import java.util.Optional;
